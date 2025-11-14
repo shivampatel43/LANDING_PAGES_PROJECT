@@ -1,0 +1,17 @@
+/* Responsive styles for landing pages */
+*{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+body{margin:0;color:#111;background:#f7f7fb}
+.header{background:#123456;color:#fff;padding:24px;text-align:center}
+.container{max-width:1000px;margin:24px auto;padding:16px;background:#fff;border-radius:12px;box-shadow:0 6px 18px rgba(17,24,39,0.06)}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:900px){.grid{grid-template-columns:1fr 320px}}
+.cta{display:flex;gap:8px;flex-wrap:wrap}
+.btn{background:#0b5fff;color:#fff;padding:10px 14px;border-radius:10px;border:0;cursor:pointer}
+.form-group{display:flex;flex-direction:column;margin-bottom:8px}
+input,select{padding:10px;border-radius:8px;border:1px solid #ddd}
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.35)}
+.modal .panel{background:#fff;padding:18px;border-radius:12px;max-width:720px;width:90%}
+.success{color:green;margin-top:8px}
+.error{color:red;margin-top:8px}
+.footer{padding:12px;text-align:center;color:#666;font-size:14px;margin-top:12px}
+.small{font-size:13px;color:#666}

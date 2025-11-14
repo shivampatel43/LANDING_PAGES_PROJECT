@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rising Tech University</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Rising Tech University</h1>
+    <p class="small">Innovating engineers since 2002</p>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <section>
+        <h2>Overview</h2>
+        <p>Rising Tech University offers industry-aligned programs with modern labs and strong placement support.</p>
+
+        <h3>Courses</h3>
+        <ul>
+        <li>B.Tech Computer Science</li>
+<li>B.Tech Electronics</li>
+<li>MBA</li>
+<li>B.Sc Data Science</li>
+        </ul>
+
+        <h3>Placements & Facilities</h3>
+        <p>Placement assistance with average package ₹5 LPA and top recruiters across tech and finance.</p>
+
+        <div class="cta">
+          <button class="btn" onclick="openFees(1)">Check Course-wise Fees</button>
+          <a class="btn" href="#" download>Download Brochure</a>
+          <button class="btn" onclick="document.getElementById('leadForm1').scrollIntoView({behavior:'smooth'})">Apply Now</button>
+        </div>
+      </section>
+
+      <aside>
+        <div class="container">
+          <h3>Quick Apply</h3>
+          <form id="leadForm1" onsubmit="event.preventDefault(); submitLead('leadForm1');">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input name="fullname" />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input name="email" type="email" />
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input name="phone" />
+            </div>
+            <div class="form-group">
+              <label>State</label>
+              <input name="state" />
+            </div>
+            <div class="form-group">
+              <label>Course Interested</label>
+              <select name="course">
+                <option value='1'>B.Tech Computer Science</option>
+<option value='2'>B.Tech Electronics</option>
+<option value='3'>MBA</option>
+<option value='4'>B.Sc Data Science</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Intake Year</label>
+              <select name="intake">
+                <option>2025</option><option>2026</option><option>2027</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label><input type="checkbox" name="consent" value="yes" /> I consent to be contacted</label>
+            </div>
+            <div style="display:flex;gap:8px">
+              <button class="btn" type="submit">Submit</button>
+            </div>
+            <div class="form-message small"></div>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <div id="feesModal" class="modal" onclick="if(event.target.id==='feesModal')closeModal()">
+    <div class="panel" id="feesContent"></div>
+  </div>
+
+  <footer class="footer">
+    © 2025 Rising Tech University — All rights reserved
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
